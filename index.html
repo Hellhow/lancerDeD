@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- ANCHOR Signature
+
+    ._________.
+    | > \   < |
+    | \\[T]// |
+    |  \|O|/  |
+    |   |Y|   |
+    |  _|||_  |
+    |_________|
+
+ -->
+
+<html lang="FR-fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="SIRJACQUES Vincent">
+    <meta name="copyright" content="SIRJACQUES Vincent">
+    <meta name="robots" content="index, follow">
+    <meta name="rating" content="general">
+
+    <!-- ANCHOR titre -->
+    <title>Lanceur de D</title>
+    <meta name="description" content="Prototype Lanceur de D">
+
+    <!-- SECTION CSS -->
+    <!-- ANCHOR icon de la page -->
+    <link rel="shortcut icon" href="dice-d20-solid.svg" type="image/x-icon">
+
+    <!-- ANCHOR CSS Icon -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- ANCHOR CSS framework -->
+    <!-- <link rel="stylesheet" href="css/1_reset.css"> -->
+    <!-- <link rel="stylesheet" href="css/2_normalize.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/mode.css"> -->
+
+    <!-- ANCHOR CSS Custom-->
+    <link rel="stylesheet" href="exoStyle.css">
+    <!-- !SECTION CSS -->
+
+    <!-- SECTION JS__head -->
+    <!-- !SECTION JS__head -->
+
+</head>
+
+<body>
+    <!-- SECTION Header -->
+    <header>
+        <h1>Lanceur de Dé</h1>
+    </header>
+    <!-- !SECTION Header -->
+
+    <!-- SECTION Main -->
+    <main>
+        <form action="#" id="lanceD">
+            <fieldset class="form__contour">
+                <fieldset class="lanceD">
+                    <legend>
+                        Champ de sélection
+                    </legend>
+                    <label for="valX">Nombre de D :</label>
+                    <input type="text" id="valX" placeholder="x">
+                    <label for="valD">Nombre de face :</label>
+                    <input type="text" id="valD" placeholder="y">
+                    <label for="valA">Valeur bonus ajouté :</label>
+                    <input type="text" id="valA" placeholder="a">
+                </fieldset>
+                <fieldset class="lanceD" id="lanceD2">
+                    <legend>
+                        Résultat
+                    </legend>
+                    <label for="result" id="aff">Résultat de xDy+a :</label>
+                    <input type="text" id="result" disabled placeholder="=">
+                    <label for="resultD" hidden></label>
+                    <textarea type="text" id="resultD" disabled></textarea>
+                </fieldset>
+                <button title="Cliquez pour lancer" type="submit" id="lancer">
+                    <img src="dice-d20-solid.svg" alt="img_D20">
+                </button>
+            </fieldset>
+        </form>
+    </main>
+    <!-- !SECTION Main -->
+
+    <!-- SECTION JS__body-end -->
+    <!-- ANCHOR JS custom -->
+    <script src="lancerDeD.js" defer></script>
+    <!-- ANCHOR JS framework -->
+    <!-- <script src="js/topnav.js"></script> -->
+    <!-- !SECTION JS__body-end -->
+
+</body>
+
+</html>

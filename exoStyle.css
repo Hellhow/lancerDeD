@@ -1,0 +1,65 @@
+body {
+    color: #0f0;
+    background-color: #1e1e1e;
+    font-size: large;
+}
+
+body,
+header,
+main,
+p,
+ul,
+.form__contour {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 4px;
+}
+
+fieldset,
+input {
+    border-radius: 5px;
+}
+
+.lanceD {
+    display: grid;
+    grid-template-columns: 160px 40px;
+    row-gap: 1rem;
+}
+
+a {
+    color: gold;
+}
+
+input {
+    text-align: center;
+}
+
+[disabled] {
+    background-color: white;
+    color: black;
+}
+
+button {
+    border-radius: 50%;
+    scale: 1.02;
+}
+
+img {
+    width: 25px;
+    height: auto;
+}
+
+button:hover,
+img:hover {
+    cursor: pointer;
+}
+
+textarea {
+    padding: 0.5rem;
+    height: 40px;
+    width: 185px;
+    text-align: center;
+    font-size: large;
+    resize: none;
+}
