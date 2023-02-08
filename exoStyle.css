@@ -55,6 +55,21 @@ img:hover {
     cursor: pointer;
 }
 
+/* SECTION input number arrows remove */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* !SECTION */
+
 textarea {
     padding: 0.5rem;
     height: 40px;
